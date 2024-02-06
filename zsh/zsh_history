@@ -1,0 +1,36 @@
+: 1707258437:0;ls
+: 1707258438:0;cd src
+: 1707258440:0;ls
+: 1707258443:0;cd dotfiles-mbp
+: 1707258444:0;ls
+: 1707258446:0;git status
+: 1707258457:0;echo '*.swp' >> .gitignore
+: 1707258459:0;git status
+: 1707258469:0;brew install neovim
+: 1707258653:0;vim
+: 1707258660:0;mkdir vim
+: 1707258664:0;touch vim/vimrc
+: 1707258693:0;cd src
+: 1707258705:0;git clone git@github.com:heynemann/dotfiles-windows.git
+: 1707258709:0;cd dotfiles-windows
+: 1707258717:0;rm -rf vim
+: 1707258731:0;cp -r ../dotfiles-windows/vim ./
+: 1707258737:0;vim
+: 1707258744:0;cd ..
+: 1707258774:0;cd dotfiles-mbp
+: 1707258778:0;make vim-brew
+: 1707258903:0;make vim-symlinks
+: 1707258911:0;mkdir ~/.config/nvim
+: 1707258913:0;make vim-symlinks
+: 1707258922:0;ls -la ~/.vim
+: 1707258939:0;vim
+: 1707258979:0;git status
+: 1707258981:0;vim
+: 1707258991:0;brew install fd
+: 1707258995:0;vim
+: 1707259025:0;cp ../dotfiles-windows/tmux.conf ./
+: 1707259029:0;cp ../dotfiles-windows/dev-tmux
+: 1707259034:0;cp ../dotfiles-windows/dev-tmux ./
+: 1707259038:0;chmod +x dev-tmux
+: 1707259052:0;make tmux-setup
+: 1707259059:0;st
