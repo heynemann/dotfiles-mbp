@@ -156,4 +156,6 @@ set background=dark
 
 if !has('nvim')
   set clipboard=unnamed-plus
+else
+  set clipboard=unnamed
 endif

@@ -4,7 +4,7 @@ function reload() {
 
 alias ls="ls --color"
 
-export EDITOR='vim'
+export EDITOR='nvim'
 
 alias sz="reload"
 alias ea="$EDITOR ~/.alias.zsh;reload"
